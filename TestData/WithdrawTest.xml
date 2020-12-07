@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <method>		
+        <css>Css</css>
+        <xpath>Xpath</xpath>													
+    </method>   
+    <button>
+        <withdraw>.checkStatusBtn_payPwd:nth-child(1)</withdraw>            <!-- 提现按钮 -->	
+        <confirm>//input[@id='submitBtn']</confirm>							<!-- 确认提现 -->	
+        <confirm2>.btnOk</confirm2>											<!-- 提示弹窗上的确定按钮 -->
+        <confirm3>#sure</confirm3>											<!-- 确认提现金额弹窗上的确定按钮 -->	
+        <confirm4>//input[@id='nextButton']</confirm4>						<!-- 存管验密页面上的确定按钮 -->	
+    </button>
+    <input>
+        <inputmoney>//input[@id='money']</inputmoney>						<!-- 提现金额输入框 -->	
+        <password>//input[@id='password']</password>						<!-- 存管验密页面的密码输入框 -->	
+    </input>
+    <money>																	<!-- 提现金额 -->
+        <less>2.0</less>
+        <sucess>100.00</sucess>
+    </money>
+    <message>
+        <mes1>.tipText_new</mes1>											<!-- 弹窗提示信息 -->	
+        <mes2>提现金额请输入2元以上</mes2>									<!-- 提现金额小于等于2元时,期望提示信息 -->	
+        <mes3>//em[@id='sqtx']</mes3>										<!-- 确认提现金额 -->	
+        <mes4>.gold > span</mes4>											<!-- 账户余额 -->	
+        <mes5>提现金额应小于账户余额</mes5>									<!-- 提现金额超出账户余额时,期望提示信息 -->
+    </message>
+    <pwd>
+        <pwd>111111</pwd>													<!-- 存管交易密码 -->	
+    </pwd>
+        
+ 
+</testdata>

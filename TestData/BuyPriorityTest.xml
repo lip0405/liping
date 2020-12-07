@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <priority name="buy_priority_success">		
+        <method>Xpath</method>			                   					
+        <name>//a[contains(text(),'优先出借')]</name>                       	<!-- 获取优先出借列表名称 -->	
+        <scroll>410</scroll>
+        <price>1000</price>
+        <message>.tipText</message>		    								<!-- 加入优先出借成功文案 -->
+        <priority>//h3[contains(.,'优先出借30天-2019082801')]</priority>    	<!-- 要加入的优先出借 -->
+        <input>//input[@id='moneyID']</input>
+     </priority>  
+     
+     <coupon name="buy_priority_coupon">     	   	
+        <scroll>150</scroll>
+        <coupon>//input[@name='couponIds']</coupon>							<!-- 勾选加息券 -->
+     </coupon>
+     
+     <less name="buy_priority_less">
+         <price>900</price>
+         <button>//input[@name='submitBtn']</button>						<!-- 获取优先出借‘我要加入’按钮状态 -->
+     </less>
+     
+     <decimal name="buy_priority_decimal">
+         <price>1000.99</price>
+     </decimal>
+     
+     <overflow name="buy_priority_overflow">
+         <method>Css</method>
+         <price>.end > .c2</price>										 	<!-- 获取优先出借当前可出借金额 -->
+       	 <message>.tipText_new</message>									<!-- 获取‘剩余出借金额不足，请重新加入’文案 -->
+     </overflow>   
+         
+     <award name="buy_priority_award">
+         <award>//input[@name='redbounIds']</award>							<!-- 勾选红包 -->
+     </award>
+</testdata>

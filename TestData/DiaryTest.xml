@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <method>		
+        <css>Css</css>
+        <xpath>Xpath</xpath>											
+    </method>   
+    <tab>
+		<diary>.yunyingReportWc</diary> 								<!-- 旺财日记一级Tab -->
+		<diarydate>//ul[@id='dates']/li[2]</diarydate>					<!-- 旺财日记二级Tab -->
+		<richman>(//a[contains(text(),'财主见面会')])[2]</richman>  		<!-- 财主见面会一级Tab -->
+		<richdata>//ul[@id='dates']/li[2]</richdata>					<!-- 财主见面会二级Tab -->
+    </tab>
+    <message>
+		<mes1>.fl:nth-child(1) .fr</mes1>								<!-- 旺财日记的标题日期 -->
+		<mes2>.fl:nth-child(1) .time</mes2>								<!-- 财主见面会的标题日期 -->
+    </message>
+
+</testdata>

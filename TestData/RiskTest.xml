@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <method>		
+        <css>Css</css>
+        <xpath>Xpath</xpath>											
+    </method>   
+    <button>
+        <risk>li:nth-child(7) > p > a</risk>            		<!-- 风险测评按钮 -->	
+        <reset>#reset</reset>									<!-- 重新测评按钮 -->	
+		<q1>//label[contains(.,'A.65岁及以上')]</q1>
+		<q2>//label[contains(.,'A.自由职业者')]</q2>
+		<q3>//label[contains(.,'A.10万以下')]</q3>
+		<q4>//label[contains(.,'A.资产保值抗通胀')]</q4>
+		<q5>//label[contains(.,'A.1年及以下')]</q5>
+		<q6>//label[contains(.,'D.10%以下')]</q6>
+		<q7>//label[contains(.,'C.3-5年')]</q7>
+		<q8>//label[contains(.,'C.5%-15%，可承受中等风险')]</q8>
+		<q9>//label[contains(.,'A.本金不能损失，收益可未达预期')]</q9>
+		<q10>//label[contains(.,'B.1000元-10万')]</q10>
+		<commit>#risk_test</commit>								<!-- 提交按钮 -->	
+    </button>
+    <message>
+		<resault>.results</resault>								<!-- 测评结果 -->
+		<expres>稳健型</expres>									<!-- 期待测评结果 -->
+    </message>
+
+</testdata>

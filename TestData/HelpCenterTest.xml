@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <method>		
+        <css>Css</css>
+        <xpath>Xpath</xpath>											
+    </method>   
+    <tab>
+		<help>(//a[contains(text(),'帮助中心')])[2]</help> 				<!-- 帮助中心列表 -->
+		<second>.item:nth-child(2) > h3</second>						<!-- 第二个导航 -->
+    </tab>
+    <message>
+		<mes1>.item_list:nth-child(2) > .help_title > p</mes1>			<!-- 第二个导航的title -->
+    </message>
+
+</testdata>

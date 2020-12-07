@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <method>		
+        <css>Css</css>
+        <xpath>Xpath</xpath>											
+    </method>   
+    <button>
+        <account>li:nth-child(6) > p > a</account>            				<!-- 账户设置按钮 -->	
+        <confirm>.oBtn</confirm>											<!-- 确认按钮 -->	
+        <trade>//a[contains(text(),'修改/忘记')]</trade>						<!-- 交易密码修改按钮 -->
+        <remember>//i[contains(.,'我记得原交易密码')]</remember>				<!-- 记得原交易密码按钮 -->
+        <confirm2>#nextButton</confirm2>									<!-- 修改交易密码确认按钮 -->
+        <bank>//a[contains(text(),'更换银行卡')]</bank>						<!-- 更换银行卡按钮 -->
+        <confirm3>.btnOk</confirm3>											<!-- 我知道了按钮 -->
+        <update>#bankTel_id</update>										<!-- 更新预留手机号按钮 -->
+        <confirm4>#setBankPhone_sub_oBtn</confirm4>							<!-- 新的预留手机号确认按钮 -->
+        <vercode>#sendSmsVerify</vercode>									<!-- 点击获取验证码按钮 -->
+        <known>//a[contains(text(),'我知道了')]</known>						<!-- 我知道了按钮 -->
+        <auth>#authorization</auth>											<!-- 重新授权按钮 -->
+        <agree>#isAgreeReg</agree>											<!-- 风险提示勾选 -->
+        <confrim5>#nextButton</confrim5>									<!-- 授权按钮 -->
+        <view>//a[contains(text(),'查看')]</view>							<!-- 查看按钮 -->
+    </button>
+    <input>
+        <oldtrpwd>#password</oldtrpwd>										<!-- 交易旧密码输入框 -->	
+        <newtrpwd>#newTradePassword</newtrpwd>								<!-- 交易新密码输入框 -->	
+        <agpwd>#againpassword</agpwd>										<!-- 新密码再次确认输入框 -->	
+        <phone>#BankPhone</phone>											<!-- 新的预留手机号输入框 -->
+        <sms>#smsCode</sms>													<!-- 验证码输入框 -->
+        <trapwd>#password</trapwd>											<!-- 交易密码 -->
+    </input>
+    <message>
+        <mes3>#showText</mes3>												<!-- 修改交易密码返回文案 -->	
+        <mes4>修改交易密码成功！</mes4>										<!-- 修改交易密码成功,期望提示信息 -->	
+        <mes5>.tipText_new</mes5>											<!-- 更换银行卡弹窗提示文案 -->
+        <mes6>请前往“91旺财APP”我的>账户设置>银行卡>更换银行卡 按照指引进行操作</mes6>   <!-- 更换银行卡弹窗期待文案 -->
+        <mes7>#bankTel</mes7>												<!-- 新的预留手机号 -->
+        <mes8>预留手机号更新成功！</mes8>										<!-- 修改预留手机号期待文案 -->
+        <mes9>#showText</mes9>												<!-- 授权成功返回的文案 -->
+        <mes10>授权成功！</mes10>											<!-- 授权成功期待文案 -->
+        <exptitle>110001100008gJJmNE8w.pdf</exptitle>						<!-- 91旺财隐私政策的页面标题 -->
+    </message>
+    <pwd>
+        <oldtradepwd>222222</oldtradepwd>									<!-- 交易旧密码 -->
+        <newtradepwd>111111</newtradepwd>									<!-- 交易新密码 -->
+        <pwd>111111</pwd>													<!-- 存管交易密码 -->	
+    </pwd>
+    <content>
+        <tel>18894860000</tel>												<!-- 输入新的预留手机号 -->
+    </content>
+ 
+</testdata>

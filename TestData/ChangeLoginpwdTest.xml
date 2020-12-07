@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <method>		
+        <css>Css</css>
+        <xpath>Xpath</xpath>											
+    </method>   
+    <button>
+        <account>li:nth-child(6) > p > a</account>            				<!-- 账户设置按钮 -->	
+        <loginedit>#login_edit</loginedit>									<!-- 点击登录密码的修改按钮 -->
+        <confirm>.oBtn</confirm>											<!-- 确认按钮 -->	
+    </button>
+    <input>
+        <oldpwd>//input[@id='oldpwd']</oldpwd>								<!-- 登录旧密码输入框 -->	
+        <newpwd>//input[@id='newpwd']</newpwd>								<!-- 登录新密码输入框 -->	
+    </input>
+    <message>
+        <mes1>//span[contains(.,'登录密码修改成功')]</mes1>					<!-- 修改登录密码返回文案 -->	
+        <mes2>登录密码修改成功</mes2>										<!-- 修改登录密码成功,期望提示信息 -->	
+    </message>
+    <pwd>
+        <oldloginpwd>liping04050526</oldloginpwd>								<!-- 登录旧密码 -->
+        <newloginpwd>liping0405</newloginpwd>							<!-- 登录新密码 -->
+    </pwd>
+    <content>
+        <tel>18894860000</tel>												<!-- 输入新的预留手机号 -->
+    </content>
+    <iframe>
+        <frame>body > div.aui_state_focus.aui_state_lock > div > table > tbody > tr:nth-child(2) > td.aui_c > div > table > tbody > tr:nth-child(2) > td.aui_main > div > iframe</frame>  <!-- iframe -->
+    </iframe>
+ 
+</testdata>

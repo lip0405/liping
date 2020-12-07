@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <setup name="setUp">		
+        <method>Css</method>
+        <btn>.btnOk</btn>													<!-- 提示弹窗的确定按钮 -->	
+    </setup>   
+    
+    <res name="recharge_fastpaymet">
+        <price>1000.0</price>             		   			    			<!-- 充值金额 -->			
+        <verification>111111</verification>									<!-- 短信验证码 -->
+        <password>111111</password>											<!-- 交易密码 -->
+        <new>//span[@id='balance']</new>
+    </res>
+    
+     <bank name="recharge_ecurrency">
+         <input>#money</input>
+         <price>100.0</price>										    	<!-- 充值金额 -->
+     </bank>
+     
+     <less name="recharge_less">
+         <price>4.0</price>
+         <mes>.tipText_new</mes>											<!-- 提示信息 -->
+     </less>	        	   		        
+     
+     <overlimit name="recharge_overlimit">
+         <money>.inpMoneyTip</money>										<!-- 当前单笔/单天限额 -->
+     </overlimit>
+     
+     <decimal name="recharge_decimal">
+         <money>1000.66</money>												<!-- 充值金额 -->
+     </decimal>
+</testdata>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <method>		
+        <css>Css</css>
+        <xpath>Xpath</xpath>											
+    </method>   
+    <button>
+		<contact>.sideNav</contact> 							<!-- 联系我们 -->
+		<help>//a[contains(text(),'帮助中心')]</help>			<!-- 帮助中心 -->
+		<consult>//a[contains(text(),'点击咨询')]</consult>     <!-- 点击咨询 -->
+		<product>//a[contains(text(),'项目列表')]</product>     <!-- 项目列表 -->
+    </button>
+    <message>
+		<exptitle>91旺财帮助中心-网络借贷信息中介平台</exptitle>  <!-- 帮助中心页面标题 -->
+		<exptitle2>QQ</exptitle2>								<!-- 点击咨询页面标题 -->
+    </message>
+
+</testdata>
